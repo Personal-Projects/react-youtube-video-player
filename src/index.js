@@ -1,3 +1,4 @@
+import key from './youtubeKey';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
