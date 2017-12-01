@@ -4,6 +4,7 @@ import SearchBar from './components/search_bar';
 import key from './youtubeKey';
 import YTSearch from 'youtube-api-search';
 import VideoList from './components/video_list';
+import VideoDetail from './components/video_detail';
 
 // Create a new component. This should produce some HTML
 class App extends Component {
@@ -17,10 +18,11 @@ class App extends Component {
     });
   }
 
-  render () {
+  render() {
     return (
       <div>
-        <SearchBar />  
+        <SearchBar />
+        <VideoDetail video={this.state.videos[0]} />
         <VideoList videos={this.state.videos} />
       </div>
     );
